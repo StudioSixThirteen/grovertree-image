@@ -16,3 +16,5 @@ RUN composer global require pantheon-systems/terminus \
 ENV PATH="/root/.composer/vendor/bin:${PATH}"
 
 CMD ["php", "-v"]
+
+RUN ln -s /root/.composer/vendor/bin/terminus /usr/local/bin/terminus
